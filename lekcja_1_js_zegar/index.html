@@ -1,0 +1,59 @@
+<!-- a - hiperłącze -->
+<!-- href - adres pod który ma prowadzić link, href to atrybut, atrybuty są w środku znacznika -->
+<!-- <img width="500" height="420" src="homer.jpg" /> uzywamy sciezek wzglednych-->
+<!-- w head jest informacja o kodowaniu znakow, jezyk, tytul i opis w wyszukiwarce, podpiete pliki css i JS, czcionki google, meta charset zawiera info o sposobie kodowania -->
+<!-- w sekcji body wszystko co widać: tekst, obrazy, hiperłącza, pola edycyjne, przyciski, listy, checkbox -->
+<!-- h1 to nagłówek, od h1 do h6, nagłowek automatycznie zakonczony jest przejsciem do nowej linii -->
+<!-- target="blank" powoduje otwarcie odnośnika w nowej karcie -->
+<!-- title="" to podpowiedź systemowa po najechaniu na link kursorem -->
+<!-- var dzisiaj = new Date(); obiekt klasy Date, getDate(); funkcja dokona przekopiowania z obiektu dzisiaj dzień miesciąca (liczba 1-31) do obiektu dzień -->
+<!-- getMonth() zwraca liczbe od 0 do 11,  -->
+<!-- document.getElementById("zegar"); oznacza to tyle co wez caly dokument i odszukaj w nim element o Id rownym "zegar" (czyli div) i do tego chce włożyć/podmienić pobraną datę, służy do tego innerHTML -->
+<!-- aby wyswietlac czas co 1 sek potrzebujemy dodatkowej funkcji (28:35) -->
+<!-- setTimeout("odliczanie()",1000); - funkcja, która wywołuje inna funkcje po zadanym czasie, podajemy jako argument nazwe funkcji, która chcemy wywołać -->
+<!-- dopiero opcja onload powoduje wykonywanie sie funkcji -->
+
+<!DOCTYPE HTML>
+<html lang=pl>
+<head>
+	<meta charset="utf-8" />
+	<title>najlepsze filmy + zegar</title>
+	<meta name="description" content="spis wybranych filmów" />
+	<meta name="keywords" content="filmy, movies, top filmy" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body onload="odliczanie();">
+	<h1>Najlepsze filmy</h1>
+	
+	<div id="zegar">zegar</div><br />
+	
+	Komedia:
+	<a href="https://www.filmweb.pl/Forrest.Gump" target="_blank" title="link do filmweb">
+		Forrest Gump (1994)
+	</a>
+	
+	<br /><br />
+	
+	<a href="https://www.filmweb.pl/Forrest.Gump" target="_blank" title="link do filmweb">
+		<img src="img/forrest_gump.jpg" />
+	</a>
+	
+	<br /><br />
+	
+	Horror:
+	<a href="https://www.filmweb.pl/Obcy" target="_blank" title="link do filmweb">
+		Obcy (1979)
+	</a>
+	
+	<br /><br />
+	
+	<a href="https://www.filmweb.pl/Obcy" target="_blank" title="link do filmweb">
+		<img src="img/obcy.jpg" />
+	</a>
+
+</body>
+
+</html>
